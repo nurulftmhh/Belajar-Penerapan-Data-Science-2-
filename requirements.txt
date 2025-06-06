@@ -2,7 +2,5 @@ pandas
 matplotlib
 seaborn
 numpy
-joblib
 scikit-learn
 streamlit
-pickle
