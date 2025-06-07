@@ -44,10 +44,13 @@ Analisis korelasi dan feature importance yang dilakukan menenjukkan bahwa terdap
 
 ## Rekomendasi Action Items
 1. Implementasi Sistem Early Warning
-    Terapkan sistem prediksi dropout berbasis machine learning untuk mengidentifikasi mahasiswa dengan risiko tinggi sejak awal semester.
+
+Terapkan sistem prediksi dropout berbasis machine learning untuk mengidentifikasi mahasiswa dengan risiko tinggi sejak awal semester.
 
 2. Tingkatkan Program untuk Dukungan Akademik maupun Finansial
+
 Bisa dengan menambahkan program tutoring atau mentoring untuk mahasiswa baru. Selain itu juga dapat menghubungkan sistem keuangan dengan sistem early warning agar mahasiswa yang telat bayar bisa langsung dibantu.
 
 3. Evaluasi dan Penyesuaian Kurikulum
+
 Lakukan evaluasi terkait kurikulum maupun proses pembelajaran terhadap jurusan yang memiliki resiko dropout tinggi. 
