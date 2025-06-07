@@ -16,15 +16,15 @@ with open('label_encoder.pkl', 'rb') as file:
 st.title("Prediksi Status Mahasiswa")
 
 # Input dari pengguna
-curricular_units_2nd_sem_approved = st.number_input("Jumlah Mata Kuliah Semester 2 yang Lulus", min_value=0)
-curricular_units_2nd_sem_grade = st.number_input("Rata-rata Nilai Semester 2", min_value=0.0)
-curricular_units_1st_sem_approved = st.number_input("Jumlah Mata Kuliah Semester 1 yang Lulus", min_value=0)
-curricular_units_1st_sem_grade = st.number_input("Rata-rata Nilai Semester 1", min_value=0.0)
+curricular_units_1st_sem_approved = st.number_input("Jumlah Mata Kuliah Semester 1 yang Lulus", min_value=0, max_value=30, value=0)
+curricular_units_1st_sem_grade = st.number_input("Rata-rata Nilai Semester 1", min_value=0, max_value=20, value=0)
+curricular_units_2nd_sem_approved = st.number_input("Jumlah Mata Kuliah Semester 2 yang Lulus", min_value=0, max_value=30, value=0)
+curricular_units_2nd_sem_grade = st.number_input("Rata-rata Nilai Semester 2", min_value=0, max_value=20, value=0)
 tuition_fees_up_to_date = st.selectbox("Apakah Biaya Kuliah Sudah Lunas?", ['Ya', 'Tidak'])
 scholarship_holder = st.selectbox("Apakah Menerima Beasiswa?", ['Ya', 'Tidak'])
-curricular_units_2nd_sem_enrolled = st.number_input("Jumlah Mata Kuliah Semester 2 yang Diambil", min_value=0)
-curricular_units_1st_sem_enrolled = st.number_input("Jumlah Mata Kuliah Semester 1 yang Diambil", min_value=0)
-admission_grade = st.number_input("Nilai Masuk", min_value=0.0)
+curricular_units_2nd_sem_enrolled = st.number_input("Jumlah Mata Kuliah Semester 2 yang Diambil",  min_value=0, max_value=30, value=0)
+curricular_units_1st_sem_enrolled = st.number_input("Jumlah Mata Kuliah Semester 1 yang Diambil", min_value=0, max_value=30, value=0)
+admission_grade = st.number_input("Nilai Masuk", min_value=0.0, max_value=200.0, value=0.0, step=0.1)
 displaced = st.selectbox("Apakah Mahasiswa Pindahan?", ['Ya', 'Tidak'])
 
 # Mapping nilai kategorikal ke numerik
